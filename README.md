@@ -1,5 +1,5 @@
 # printf
-This a project to create a _printf function similar to the c standard function printf
+This is a project to create a _printf function similar to the c standard function printf
 This project is done with team
 
 Team members
