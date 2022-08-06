@@ -4,7 +4,7 @@ This project is done with team
 
 Team members
 1. Ruth Moges
-2. [Bisrat Shiferaw] (https://github.com/BisratS)
+2. [Bisrat Shiferaw](https://github.com/BisratS)
 
 **Requirements**
 
