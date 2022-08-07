@@ -3,7 +3,7 @@ This is a project to create a _printf function similar to the c standard functio
 This project is done with team
 
 Team members
-1. Ruth Moges
+1. [Ruth Moges](https://github.com/rutiye)
 2. [Bisrat Shiferaw](https://github.com/BisratS)
 
 **Requirements**
