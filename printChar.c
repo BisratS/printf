@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * printChar - print character.
- * @list: va_list.
+ * printChar - print character
+ * @list: va_list
  *
- * Return 1
+ * Return: 1
  */
 
 int printChar(va_list list)
