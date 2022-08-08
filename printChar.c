@@ -11,7 +11,7 @@ int printChar(va_list list)
 {
 	int i;
 
-	aux = va_arg(list, int);
+	i = va_arg(list, int);
 
 	_putchar(i);
 
