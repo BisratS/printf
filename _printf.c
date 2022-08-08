@@ -1,13 +1,12 @@
 #include "main.h"
 
 /**
- *  * _printf - Produces output according to a format
- *   * @format: Is a character string. The format string
- *    * is composed of zero or more directives
- *     *
- *      * Return: The number of characters printed (excluding
- *       * the null byte used to end output to strings)
- *        **/
+ * _printf - Produces output according to a format
+ * @format: Is a character string. The format string
+ * is composed of zero or more directives
+ *
+ * Return: Always 0
+ */
 int _printf(const char *format, ...)
 {
 
