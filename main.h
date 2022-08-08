@@ -13,6 +13,7 @@ int handler(const char *str, va_list list);
 int percent_handler(const char *str, va_list list, int *i);
 int print(char *str);
 int _strlen(const char *str);
+int buff(char c);
 
 int printInt(va_list list);
 
