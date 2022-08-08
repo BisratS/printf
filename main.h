@@ -1,47 +1,32 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-#include <stdlib.h>
+#include <stdio.h>
 #include <stdarg.h>
 #include <limits.h>
-
-/**
- * struct flags - struct containing flags to "turn on"
- * when a flag specifier is passed to _printf()
- * @plus: flag for the '+' character
- * @space: flag for the ' ' character
- * @hash: flag for the '#' character
- */
-typedef struct flags
-{
-	int plus;
-	int space;
-	int hash;
-} flags;
-
-/**
- * struct printHandler - struct to choose the right function depending
- * on the format specifier passed to _printf()
- * @c: format specifier
- * @f: pointer to the correct printing function
- */
-typedef struct printHandler
-{
-	char c;
-	int (*f)(va_list ap, flags *f);
-} printHandler;
-
+#include <unistd.h>
 
 int _putchar(char c);
-int _puts(char *str);
+char *itoa(long int num, int base);
+int _printf(const char *format, ...);
+int handler(const char *str, va_list list);
+int percent_handler(const char *str, va_list list, int *i);
+int print(char *str);
+int _strlen(const char *str);
 
-/* Print diffrent format of number*/
-void printInt(va_list l, flags *f);
-void printFloat(va_list l, flags *f);
+int printInt(va_list list);
 
-/* Print diffrent format of string and character */
-void printCha(va_list priCha);
-void printStr(va_list priStr);
-
+/**
+ *  * struct _format - Typedef struct
+ *   *
+ *    * @type: Format
+ *     * @f: The function associated
+ *      **/
+typedef struct _format
+{
+	char type;
+	int (*f)(va_list);
+} format;
 
 #endif
+
