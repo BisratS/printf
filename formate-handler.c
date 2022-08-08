@@ -34,7 +34,7 @@ int handler(const char *str, va_list list)
 }
 
 /**
- * percent_handler - Controller for percent format
+ * percent_handler - Controller for percent format and select the right specifiers
  * @str: String format
  * @list: List of arguments
  * @i: Iterator
