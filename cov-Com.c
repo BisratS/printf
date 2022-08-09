@@ -25,7 +25,7 @@ char *strtoUpper(char *s)
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
-		if (is_lowercase(s[i]))
+		if (isLowecase(s[i]))
 		{
 			s[i] = s[i] - 32;
 		}

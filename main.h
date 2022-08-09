@@ -16,6 +16,9 @@ int print(char *str);
 int _strlen(const char *str);
 int buff(char c);
 
+/* Decode */
+int rot13(char *s);
+
 /* Compare and conver functions*/
 char *strtoUpper(char *s);
 int isLowecase(char c);
@@ -28,11 +31,16 @@ int printStr(va_list list);
 int printBin(va_list list);
 int printHexUpp(va_list list);
 int printHexLow(va_list list);
+int printOcta(va_list list);
+int printUni(va_list list);
+int printRev(va_list list);
+int printRot(va_list list);
+int printPoi(va_list list);
 
 
 /**
  * struct _format - Typedef struct
- *  
+ *
  * @type: Format
  * @f: The function associated
  */

@@ -1,14 +1,13 @@
-#include "main.c"
+#include "main.h"
 
 /**
  * printUni - Print a unsigned int
  * @list: Number to print
  *
- * Return; unsigned int
- *
+ * Return: Length of the number
  */
 
-printUni(va_list list)
+int printUni(va_list list)
 {
 	char *buff;
 	int size;

@@ -9,7 +9,7 @@
 
 int printOcta(va_list list)
 {
-	char buff;
+	char *buff;
 	int size;
 
 	buff = itoa(va_arg(list, unsigned int), 8);
