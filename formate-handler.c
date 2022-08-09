@@ -34,7 +34,8 @@ int handler(const char *str, va_list list)
 }
 
 /**
- * percent_handler - Controller for percent format and select the right specifiers
+ * percent_handler - Controller for percent format
+ * and select the right specifiers
  * @str: String format
  * @list: List of arguments
  * @i: Iterator
@@ -46,8 +47,12 @@ int percent_handler(const char *str, va_list list, int *i)
 	int size, j, numberFormat;
 
 	format formats[] = {
-		{'i', printInt}, {'d', printInt}, {'c', printChar},
-		{'s', printStr}
+		{'i', printInt}, {'d', printInt},
+		{'c', printChar}, {'s', printStr},
+		{'b', printBin}, {'X', printHexUpp},
+		{'x', printHexLow}, {'o', printOcta},
+		{'u', printUni}, {'r', printRev},
+		{'R' printRot}, {'p', printPoi}
 	};
 	*i = *i + 1;
 

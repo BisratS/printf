@@ -6,6 +6,7 @@
 #include <limits.h>
 #include <unistd.h>
 
+/* Supporting functions*/
 int _putchar(char c);
 char *itoa(long int num, int base);
 int _printf(const char *format, ...);
@@ -15,9 +16,19 @@ int print(char *str);
 int _strlen(const char *str);
 int buff(char c);
 
+/* Compare and conver functions*/
+char *strtoUpper(char *s);
+int isLowecase(char c);
+int strCom(char *s1, char *s2);
+
+/* Printing functions*/
 int printChar(va_list list);
 int printInt(va_list list);
 int printStr(va_list list);
+int printBin(va_list list);
+int printHexUpp(va_list list);
+int printHexLow(va_list list);
+
 
 /**
  * struct _format - Typedef struct
