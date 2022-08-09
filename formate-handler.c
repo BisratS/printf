@@ -52,7 +52,8 @@ int percent_handler(const char *str, va_list list, int *i)
 		{'b', printBin}, {'X', printHexUpp},
 		{'x', printHexLow}, {'o', printOcta},
 		{'r', printRev}, {'u', printUni},
-		{'R', printRot}, {'p', printPoi}
+		{'R', printRot}, {'p', printPoi},
+		{'S', printS}
 	};
 	*i = *i + 1;
 
